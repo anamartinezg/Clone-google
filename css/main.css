@@ -1,0 +1,222 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navegación*/
+header{
+    /*width-ancho - height-alto*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    /*justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*eliminar puntos*/
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: black;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: 8%;
+}
+
+/*Icono de menú*/
+nav .nav-right-section .img{
+    background-image: url(https://lh3.googleusercontent.com/ogw/AAEL6sgszSDc5_7cbrfKbIHleVtm9OWb6DGHTsxcbctd=s32-c-mo);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+/*Main*/
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/*Logo Google*/
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+/*Sección input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0px 1px 6px #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg);
+    width: 20px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+    box-sizing: 50px;
+}
+
+main .main-buttons div{
+   display: inline-block;
+}
+
+main .main-buttons button{
+    border:0;
+    height: 36px;
+    /*Fondo de botones*/
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*Color de letras antes de hover (posicionar mause, antes de dar clic)*/
+    color: #3c4043;
+    /*Redondeo de botones*/
+    border-radius: 4px;
+    /*Margen interno*/
+    padding: 0 15px;
+    /*Margen entre botones*/
+    margin-right: 8px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa; /*Se puede quitar*/
+    /*Cambia borde al hacer hover*/
+    border: 1px solid #dadce0;
+    /*Cambia color de letras (muy leve) al hacer hover*/
+    color: #202124;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /*Footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /*Posiciona el footer hasta el final*/
+    bottom: 0;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;  
+}
+
+footer .footer-right{
+    justify-self: right;  
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
+
+footer .footer-mexico{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    padding: absolute;
+    padding-left: 10px;
+    border-bottom: 1px solid #e4e4e4;
+    bottom: 40px;
+    position:fixed;
+    border-top: 1px solid #e4e4e4;
+    margin: 0;
+}
+
+
